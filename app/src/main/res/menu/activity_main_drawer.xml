@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Hiragana"
+            android:icon="@drawable/simbolhiragana"
+            android:title="Hiragana" />
+        <item
+            android:id="@+id/katakana"
+            android:icon="@drawable/simbolkatakana"
+            android:title="Katakana" />
+        <item
+            android:id="@+id/latihan"
+            android:icon="@drawable/latihan"
+            android:title="Latihan" />
+
+
+    </group>
+
+            <item
+                android:id="@+id/Beranda"
+                android:icon="@drawable/about"
+                android:title="Tentang" />
+
+
+
+</menu>

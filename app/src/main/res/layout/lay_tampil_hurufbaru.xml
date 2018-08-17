@@ -1,0 +1,114 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.biul.kana.amat.kios.kana.tampil_huruf"
+    android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_alignParentTop="true"
+        ads:adUnitId="ca-app-pub-9261861370906826/5975776878"></com.google.android.gms.ads.AdView>
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/adView"
+        />
+    <!-- <com.example.biul.kana.GifView
+        android:id="@+id/gifview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#9c1212"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    -->
+
+    <FrameLayout android:id="@+id/main_frame"
+        android:layout_width="fill_parent" android:layout_height="200dp"
+        android:layout_below="@+id/image1"
+        android:background="@drawable/border_style"
+
+        android:layout_alignParentBottom="true">
+
+    </FrameLayout>
+    <!-- <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:id="@+id/proses"
+        android:layout_alignTop="@+id/main_frame"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/undo"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/clear"
+        android:layout_toStartOf="@+id/clear"
+        android:layout_margin="@dimen/fab_margin"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/menu"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/fab_margin"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/clear"
+        android:padding="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        />
+
+    <!--<Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/clear"
+        android:layout_alignTop="@+id/main_frame"
+        android:layout_toLeftOf="@+id/proses"
+        android:layout_toStartOf="@+id/proses"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Undo"
+        android:id="@+id/back"
+        android:layout_alignTop="@+id/main_frame"
+        android:layout_toLeftOf="@+id/clear"
+        android:layout_toStartOf="@+id/clear" />
+    -->
+</RelativeLayout>
